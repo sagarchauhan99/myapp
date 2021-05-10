@@ -1,3 +1,9 @@
+
+.top{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+}
 .display{
     margin-left: 30px;
     margin-right: 30px;
@@ -7,5 +13,10 @@
     span{
         font-size: medium;
         font-weight: bold;
+    }
+    Button{
+        position: relative;
+        margin-left: 200px;
+
     }
 }

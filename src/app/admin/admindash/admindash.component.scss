@@ -9,6 +9,13 @@ h1{
     background-color: skyblue;
     padding: 15px;
     font-weight: bold;
+    h5{
+        text-align: end;
+        user-select: none;
+        :hover{
+            background: crimson;
+        }
+    }
     label{
         text-align: left;
 
@@ -20,9 +27,7 @@ h1{
     
     button{
         width: 100px;
-        margin-left: 100px;
-        
-        
+        margin-left: 100px;   
         
     }
 }

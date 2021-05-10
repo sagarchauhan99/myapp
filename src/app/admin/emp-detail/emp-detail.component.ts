@@ -24,7 +24,7 @@ getRoutes()
   this.activeRoute.params.subscribe((data)=>{
     console.log(data, 'data from routes');
     this.id=data.id;
-    this.name=this.details.Ename;
+
     
   });
 
@@ -32,10 +32,10 @@ getRoutes()
     console.log(data,'querryprams');
     this.details=JSON.parse(data.data)
     console.log(this.details,'details');
-    this.name=this.details.Ename;
-    this.dept=this.details.Edept;
-    this.email=this.details.Email;
-    this.pass=this.details.Epass;
+     this.name=this.details.name;
+     this.dept=this.details.dept;
+     this.email=this.details.mail;
+     this.pass=this.details.pass;
   });
 }
 }

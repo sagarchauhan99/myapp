@@ -1,6 +1,8 @@
 
 <div class="play-container">
+  <h5 (click)="logout()"> Logout</h5>
   <h2>Employee Details</h2>
+
   <br>
     <p>
         <label class="col-sm-3 col-form-label"> Employee Name -</label>
@@ -43,7 +45,7 @@
                 <td class="delt">{{ i.Edept }}</td>
                 <td class="delt">{{ i.Email }}</td>
                 <td class="delt">{{ i.Epass }}</td>
-                <td><button type="submit" class="btn btn-secondary btn-sm" (click)="editrow(j)">Edit</button>&nbsp;<button type="submit" class="btn btn-secondary btn-sm" (click)="deleterow(j)">Delete</button></td>
+                <td><button type="button" class="btn btn-secondary btn-sm" (click)="editrow(j)">Edit</button>&nbsp;<button type="button" class="btn btn-secondary btn-sm" (click)="deleterow(j)">Delete</button></td>
               </tr> 
             </tbody>
         </table>
