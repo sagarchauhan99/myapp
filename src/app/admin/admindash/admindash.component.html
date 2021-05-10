@@ -1,0 +1,50 @@
+
+<div class="play-container">
+  <h2>Employee Details</h2>
+  <br>
+    <p>
+        <label class="col-sm-3 col-form-label"> Employee Name -</label>
+        <input type="text" [(ngModel)]="name"> 
+        <br>
+        <label class="col-sm-3 col-form-label"> Employee ID -</label>
+        <input type="number" [(ngModel)]="number">
+        <br>
+        <label class="col-sm-3 col-form-label"> Department -</label>
+        <input type="text" [(ngModel)]="dept" >
+        <br>
+        <label class="col-sm-3 col-form-label"> Employee Email -</label>
+        <input id="email" type="email" [(ngModel)]="email" >
+        <br>
+        <label class="col-sm-3 col-form-label"> Employee Password -</label>
+        <input type="text" [(ngModel)]="pass">
+        <br>
+        <br>
+        <button type="submit" class="btn btn-secondary" (click)="addToList()">Add</button>
+    </p>
+  </div>
+  <div class="display1">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Employee Name</th>
+                <th scope="col">ID</th>
+                <th scope="col">Department</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody> 
+              <tr *ngFor="let i of Elist;let j=index" id="row" (click)="show(i)">
+                <td class="delt">{{j+1}}</td>
+                <td class="delt">{{ i.Ename }}</td>
+                <td class="delt">{{ i.id }}</td>
+                <td class="delt">{{ i.Edept }}</td>
+                <td class="delt">{{ i.Email }}</td>
+                <td class="delt">{{ i.Epass }}</td>
+                <td><button type="submit" class="btn btn-secondary btn-sm" (click)="editrow(j)">Edit</button>&nbsp;<button type="submit" class="btn btn-secondary btn-sm" (click)="deleterow(j)">Delete</button></td>
+              </tr> 
+            </tbody>
+        </table>
+    </div>

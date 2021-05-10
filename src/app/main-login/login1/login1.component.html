@@ -1,0 +1,14 @@
+
+<div class="log">
+    <span class="input-group-text" id="inputGroup-sizing-lg"><b>ID</b></span>
+    <input type="number" [(ngModel)]="id" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    <br>
+    <span class="input-group-text" id="inputGroup-sizing-lg"><b>Username</b></span>
+    <input type="text" [(ngModel)]="username" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    <br>
+    <span class="input-group-text" id="inputGroup-sizing-lg"><b>Password</b></span>
+    <input type="password" [(ngModel)]="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    <br>
+    <button class="btn btn-primary" type="submit" (click)="Elogin(id,username,password)">Log-In</button>
+
+</div>

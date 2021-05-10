@@ -1,42 +1,11 @@
-<h1>Hello</h1>
 
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-<div class="play-container">
-  <p>
-      <label> Employee Name -</label>
-      <input type="text" [(ngModel)]="name">
-      <br>
-      <br>
-      <label> Employee ID -</label>
-      <input type="number" [(ngModel)]="number"><br>
-      <br>
-      <button type="submit" class="btn btn-secondary" (click)="addToList(name,number)">Submit</button>
-  </p>
-</div>
-<div class="display1">
-      <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Employee Name</th>
-              <th scope="col">ID</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr *ngFor="let i of Elist;let j=index" id="row" [style.background-color]="(i.Enumber)%2==0 ? 'green':'red'">
-              <td class="delt">{{j+1}}</td>
-              <td class="delt">{{ i.Ename }}</td>
-              <td class="delt">{{ i.Enumber }}</td>
-              <td><button type="submit" class="btn btn-secondary" (click)="deleterow(j)">Delete</button></td>
-            </tr> 
-          </tbody>
-      </table>
-  </div>
+<nav>
+  <ul>
+     <li><a href="#" routerLink="/adminlogin"> Admin Login</a></li>
+     <li><a href="#" routerLink="/emplogin">Employee Login</a></li>
+   </ul>
+</nav>
 
+<div>
 <router-outlet></router-outlet>
+</div>
